@@ -1,0 +1,124 @@
+* {             /* IMPORTANT */
+    /* asterick (universal selector) is useful when you want to select all elements on the page.*/
+    
+    margin: 0;
+    font-family: 'Roboto Slab', sans-serif;
+  }
+
+
+header {
+    width: 100%;
+    display: table;
+    position: fixed;
+    background-color: darkgray;
+    padding: 0px;
+    
+}
+
+.hero-image {
+    background-image: url(./images/hero-image.png);
+    width: 100%;
+    height: 100%;
+    background-position: 0px 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+body, html{
+    height: 98%;
+    
+}
+
+.navigation {
+    width: 30%;
+    margin: 0, auto;
+}
+
+
+nav {
+    float: right;
+}
+
+nav ul {
+margin: 0%;
+list-style: none;
+}
+
+nav li{
+    display: inline-block;
+    margin:  20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    background-color:yellow;
+}
+
+.contacts {
+    /* This is the H1 of contact page*/
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  .contact-form{
+    /* flex aligns in a row*/
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .submit-button{
+    color:black;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    /* top-down, left-right*/
+    padding: 6px 15px;
+  }
+  
+  .submit-button:hover{
+    background:yellow;
+  }
+
+  .body-background{
+      background-color: whitesmoke;
+      height: 100%;
+      width: 100%;
+  }
+
+  .logo {
+    height: 50px;
+    width: auto;
+  /* fixed-relative to the viewport*/
+    position: fixed;
+    top: 4px;
+    left: 50px;
+  
+  }
+
+
+footer {    
+    padding: 15px;        
+    position: fixed;
+    bottom:0%;
+    width:100%;
+    background-color: darkgray;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  
