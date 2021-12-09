@@ -2,7 +2,7 @@
     /* asterick (universal selector) is useful when you want to select all elements on the page.*/
     
     margin: 0;
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'georgia', sans-serif;
   }
 
 
@@ -26,9 +26,47 @@ header {
     
 }
 
-body, html{
-    height: 98%;
-    
+/* changing default value of rem from 16px to 10px */
+
+body, html {
+  margin: 0;
+  padding:0;
+ height: 98%;
+
+}
+
+
+
+.hero-text {                /* IMPORTANT */
+  text-align: center;
+  position: fixed;
+  top: 35%;
+  color: lightskyblue;
+  left: 80%;
+  /* transform - horizontal-Vertical*/
+  transform: translate(-50%, -50%);
+  bottom: 40%
+}
+
+.horizontal {
+  /* relative caused it to be adjusted away from normal position*/
+position: relative;
+top: 20px;
+height: 12px;
+background: whitesmoke;
+}
+
+.cta-button a{
+  text-decoration: none;
+  background-color: darkturquoise;
+  padding: 7px;
+  border-radius: 7px;
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+
+.cta-button a:hover{
+  background-color: yellow;
 }
 
 .navigation {
@@ -110,9 +148,59 @@ nav a:hover{
   
   }
 
+  .heading-one {
+    text-align: center;
+    position: relative;
+    top: 4%;
+    left: 18%;
+    font-size: 25px;
+    /* transform - horizontal-Vertical*/
+    transform: translate(-50%, -50%);
+    bottom: 40%
+  }
+
+
+  .categories {
+    padding-top: 120px;
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    margin: 10px 300px;
+  }
+
+  .card-image{
+height: 60%;
+  }
+
+  .card-detail{
+    background: #e5dede;
+    padding: 10px;
+  }
+
+
+  .product-page {
+    height: 300%;
+  }
+
+  @media screen and (max-height: 700px) {
+
+.categories {
+height: 50%;
+}
+
+
+.card-detail {
+background-color: red;
+
+}
+
+  }
 
 footer {    
-    padding: 15px;        
+    padding: 10px;        
     position: fixed;
     bottom:0%;
     width:100%;
